@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden;
+}
+.picture {
+  width: 100%;
+  overflow: hidden;
+}
+.picture > img {
+  position: fixed;
+  z-index: -1;
+  top: 100px;
+  left: 0;
+  overflow: hidden;
+  transform: scale(1.5);
+}
+.picture .overlay {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.text{
+  background-color: #fff;
+  margin-bottom: -100px;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.text .div {
+  width: 70%;
+  margin: auto;
+}
+.text h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.text p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #585858;
+  margin-bottom: 60px;
+}
+.text .div div {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b6b6b642;
+  text-align: center;
+  padding: 40px 80px;
+  margin-bottom: 60px;
+}
+.text .div div p {
+  font-size: 16px;
+  color: #222222;
+  margin: 20px 0 20px;
+}
+.text .div div small {
+  font-weight: 700;
+  font-size: 15px;
+}
+.menu {
+  background-color: #fff;
+  padding: 150px 0;
+  overflow: hidden;
+  margin: 0;
+}
+div.container.show-case {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+div.container.show-case div {
+  border-radius: 5px;
+  background-color: #fff;
+  height: 300px;
+  position: relative;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+div.container.show-case div a{
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #0e8ce4;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+}
+div.container.show-case div:hover a {
+  visibility: visible;
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+div.container.show-case div a:hover {
+  background-color: #0e7ece;
+}
+div.container.show-case h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 25px 30px 25px 25px;
+}
+div.container.show-case img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    padding-bottom: 100px;
+  }
+  div.container.show-case {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .text .div {
+    width: 100%;
+  }
+  div.container.show-case {
+    grid-template-columns: 1fr;
+  }
+  div.container.show-case div {
+    height: 300px;
+  }
+  div.container.show-case h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

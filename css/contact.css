@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat',poppins;
+}
+body{
+    background-color: #ededed;
+}
+
+.flex .container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+    gap: 40px;
+    width: 100%;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#flex{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    padding: 20px 40px 30px;
+    border: 1px solid rgba(185, 183, 183, 0.274) ;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: 80px 0;
+    width: 30%;
+}
+#flex span{
+    margin-top: 12px;
+}
+#flex .fa-phone, #flex .fa-envelope, #flex .fa-location-dot{
+    color: dodgerblue;
+    font-size: 30px;
+    display: flex;
+    margin-top: 10px;
+}
+#p1{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#p2{
+    font-size: 14px;
+    color: rgb(133, 129, 129);
+    margin-bottom: 0;
+}
+#form{
+    margin-bottom: 40px;
+}
+#form .container {
+    padding: 0 100px;
+}
+#form h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.input{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+#text{
+    width: 30%;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(130, 125, 125, 0.508) ;
+    outline: none;
+    margin-bottom: -10px;
+    margin-top: 30px;
+    color: dodgerblue;
+
+}
+#text::placeholder{
+    color: rgba(130, 125, 125, 0.508) ;
+    font-weight: 500;
+}
+#text:hover{
+    border: 1px solid rgb(113, 110, 110) ;
+    transition: 0.3s;
+}
+#text:active{
+    border: 1px solid rgb(113, 110, 110) ;
+}
+
+textarea{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-radius: 5px;
+    height: 150px;
+    border: 1px solid rgba(130, 125, 125, 0.508) ;
+}
+textarea::placeholder{
+    color: rgba(130, 125, 125, 0.508) ;
+    font-weight: 500;
+}
+textarea:hover{
+    border: 1px solid rgb(113, 110, 110) ;
+    transition: 0.3s;
+}
+textarea:active{
+    border: 1px solid rgb(113, 110, 110) ;
+}
+input[type=button]{
+    background-color: dodgerblue;
+    border-style: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 30px;
+}
+iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #flex {
+        padding: 20px 20px 30px;
+    }
+    #p1 {
+        margin-bottom: 0;
+    }
+    #p2 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .flex .container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 80px 0;
+    }
+    #flex {
+        width: 100%;
+        margin: 0;
+        margin: auto;
+        padding-left: 40px;
+        gap: 20px;
+    }
+    #p1 {
+        font-size: 14px;
+    }
+    #p2 {
+        font-size: 10px;
+    }
+    #form .container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .input {
+        flex-direction: column;
+    }
+    .input input {
+        font-size: 10px;
+    }
+    #text:first-child {
+        margin-top: 30px;
+    }
+    #text {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    #text::placeholder{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .flex .container {
+        padding: 80px 10px;
+        gap: 30px;
+    }
+    #form .container {
+        padding: 0 10px;
+    }
+}

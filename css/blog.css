@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', poppins;
+}
+
+.blog {
+    overflow: hidden;
+}
+
+.blog>img {
+    position: fixed;
+    z-index: -1;
+    top: 50px;
+    left: 0;
+    overflow: hidden;
+}
+
+.blog .overlay {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(#ffffff9c, #cde4f19c);
+    text-align: center;
+}
+
+.blog .overlay h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#h1 {
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    margin: 300px auto;
+}
+
+#blog-text {
+    height: 150px;
+    position: relative;
+    margin-top: -4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(163, 162, 162, 0.171);
+}
+
+#blog-text p {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 27px;
+    margin: 30px 25px;
+}
+.post{
+    background-color: #fff;
+    overflow: hidden;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#grid {
+    margin-bottom: 30px;
+    width: 31%;
+}
+
+#grid img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+}
+
+#grid a {
+    text-decoration: none;
+    background-color: rgb(31, 131, 230);
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 0;
+    width: 100%;
+    top: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+#grid:hover a {
+    opacity: 1;
+    transition: .2s ease-in-out;
+    visibility: visible;
+}
+
+#grid a:hover {
+    background-color: rgb(10, 111, 211);
+    transition: 0.2s;
+}
+
+#grid a.show {
+    background-color: rgb(10, 111, 211);
+    transition: 0.2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+    #blog-text p {
+        margin: 20px;
+    }
+    .grid {
+        gap: 20px;
+    }
+    #grid {
+        width: 31.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #grid {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #grid {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .post .container {
+        padding: 0 12px;
+    }
+    #blog-text p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

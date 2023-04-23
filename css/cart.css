@@ -1,0 +1,239 @@
+body{
+    overflow-x: hidden;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.cart h1{
+    margin-left: -730px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.macbook{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border: 1px solid rgba(113, 110, 110, 0.236) ;
+    width: 85%;
+    margin: auto;
+    padding: 20px 25px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+.macbook .img {
+    width: 200px;
+}
+.macbook .img img {
+    width: 160px;
+}
+.macbook h6{
+    font-size: 12px;
+    color: rgb(113, 110, 110) ;
+}
+.macbook h4{
+    font-size: 18px;
+}
+#cart-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#color{
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 100%;
+}
+.color{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.order{
+    margin: auto;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid rgba(113, 110, 110, 0.236) ;
+    width: 85%;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    align-items: center;
+    margin-bottom: 60px;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+    gap: 40px;
+    padding: 10px;
+}
+.total h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.total h6{
+    color: rgb(113, 110, 110);
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.button{
+    width: 85%;
+    margin: auto;
+    justify-content: end;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 30px;
+}
+.button button{
+    border-style: none;
+    width: 180px;
+    padding: 12px;
+    border-radius: 5px;
+}
+#b1{
+    border: 2px solid  rgb(145, 145, 145);
+    background-color: transparent;
+    color:  rgb(113, 110, 110);
+    font-weight: 500;
+}
+#b1:hover{
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    
+}
+#b2{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 500;
+}
+#b2:hover{
+    background-color: rgba(30, 143, 255, 0.867);
+}
+#b2:focus, #b1:focus{
+    border: 2px solid black;
+}
+.flex {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+#cart-content.one {
+    text-align: end;
+    margin-top: 0;
+}
+.column {
+    display: flex;
+    gap: 80px;
+}
+
+@media screen and (max-width: 1400px) {
+    .column{
+        justify-content: space-between;
+        width: 80%;
+        gap: 0;
+    }
+    .flex {
+        width: 70%;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .button{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cart {
+        align-items: initial;
+        margin-top: 100px;
+    }
+    .cart h1 {
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .macbook {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .macbook .img {
+        width: 150px;
+    }
+    .macbook .img img {
+        width: 120px;
+    }
+    .macbook h4 {
+        font-size: 16px;
+    }
+    .column {
+        width: 100%;
+        margin-top: 20px;
+        gap: 0;
+    }
+    #cart-content {
+        gap: 15px;
+    }
+    .order {
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 40px;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+    #cart-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    .macbook h4 {
+        font-size: 13px;
+    }
+    .total {
+        justify-content: start;
+        gap: 10px;
+    }
+    .total h4 {
+        font-size: 18px;
+    }
+    .button {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cart {
+        margin-bottom: 30px;
+    }
+    .order {
+        margin-top: 10px;
+    }
+    .button {
+        gap: 10px;
+    }
+    .button button {
+        padding: 5px 18px;
+        font-size: 14px;
+        width: auto;
+    }
+}
