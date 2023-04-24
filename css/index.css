@@ -1210,7 +1210,7 @@ section.column>div .item:hover p {
   width: 33.33%;
 }
 
-.review > div:first-child {
+.review>div:first-child {
   width: 40%;
   display: flex;
   align-items: center;
@@ -1527,6 +1527,13 @@ section.column>div .item:hover p {
 
   /* RECENTLY VIEWED ENDS */
 
+  /* BRANDS STARTS */
+
+  .container.brands .img img:nth-child(8) {
+    display: none;
+  }
+
+  /* BRANDS ENDS */
 }
 
 @media screen and (max-width: 1199px) {
@@ -1697,7 +1704,7 @@ section.column>div .item:hover p {
 
   /* TRENDS ENDS */
 
-  /* LAST REVIEWS STARTS */ 
+  /* LAST REVIEWS STARTS */
 
   .boxes {
     flex-direction: column;
@@ -1708,7 +1715,7 @@ section.column>div .item:hover p {
 
   /* RECENTLY VIEWED STARTS */
 
-  .viewed-images:last-child ,
+  .viewed-images:last-child,
   .viewed-images:nth-child(5) {
     display: none;
   }
@@ -1725,8 +1732,8 @@ section.column>div .item:hover p {
   .container.brands .img {
     overflow: hidden;
   }
-  
-  .container.brands .img img:last-child {
+
+  .container.brands .img img:nth-child(7) {
     display: none;
   }
 
@@ -1930,6 +1937,7 @@ section.column>div .item:hover p {
     flex-direction: column;
     width: auto;
   }
+
   .trends .text h3 {
     width: 100%;
   }
@@ -2114,7 +2122,7 @@ section.column>div .item:hover p {
     align-items: start;
   }
 
-  .review > div:first-child {
+  .review>div:first-child {
     width: 25%;
   }
 
@@ -2172,6 +2180,10 @@ section.column>div .item:hover p {
 @media screen and (max-width: 575px) {
 
   /* FREE DELIVERY STARTS */
+  .era-1 {
+    min-height: 310px;
+  }
+
   .era {
     align-items: center;
     gap: 30px;
@@ -2181,7 +2193,7 @@ section.column>div .item:hover p {
 
   .era.container {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 0 12px 5px;
   }
 
@@ -2195,8 +2207,9 @@ section.column>div .item:hover p {
   }
 
   .era h1 {
-    font-size: 24px;
-    position: absolute;
+    font-size: 23px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .price {
@@ -2205,16 +2218,17 @@ section.column>div .item:hover p {
 
   .price h2 {
     font-size: 18px;
-    margin-top: 70px;
+    font-weight: 500;
   }
 
   .text h3 {
     font-size: 12px;
+    font-weight: 500;
   }
 
   .era-1 button {
     font-size: 12px;
-    padding: 5px;
+    padding: 10px 15px;
     width: 100px;
   }
 
@@ -2222,6 +2236,7 @@ section.column>div .item:hover p {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 12px;
   }
 
   #delivery-grid {
@@ -2234,7 +2249,56 @@ section.column>div .item:hover p {
     width: 100%;
   }
 
+  #delivery h6 {
+    font-size: 12px;
+  }
+
   /* FREE DELIVERY ENDS */
+
+  /* DEALS OF THE WEEK STARTS */
+
+  section.column>div:nth-child(3) {
+    display: none;
+  }
+
+  .container.deals .showcase .img img {
+    width: 100%;
+  }
+
+  .container.deals .showcase .head {
+    margin-bottom: 40px;
+  }
+
+  .container.deals .showcase h2 {
+    font-size: 15px;
+  }
+
+  .container.deals .showcase {
+    padding: 40px 15px;
+  }
+
+  .container.deals .showcase h6 {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .container.deals .showcase h4 {
+    font-weight: 500;
+  }
+
+  .container.deals .showcase .timer div:first-child {
+    margin-bottom: 8px;
+  }
+
+  .container.deals .showcase .timer div:nth-child(2) {
+    font-size: 8px;
+  }
+
+  .container.deals .showcase p {
+    font-size: 11px;
+  }
+
+  /* DEALS OF THE WEEK ENDS */
 
   /* POPULAR CATEGORIES STARTS */
 
@@ -2306,6 +2370,11 @@ section.column>div .item:hover p {
   /* DEALS OF THE WEEK ENDS */
 
   /* MACBOOK STARTS */
+  .macbook {
+    height: auto;
+    padding: 85px 0;
+  }
+
   .macbook h5 {
     margin: 10px 0;
     font-size: 25px;
@@ -2456,21 +2525,9 @@ section.column>div .item:hover p {
   /* LAST REVIEWS ENDS */
 
   /* BRANDS STARTS */
-
   .container.brands {
-    margin-left: 2%;
-    margin-right: 2%;
-    gap: 30px;
+    display: none;
   }
-
-  .container.brands i:first-child {
-    margin-left: -40px;
-  }
-
-  .container.brands i:last-child {
-    margin-right: -40px;
-  }
-
   /* BRANDS ENDS */
 }
 
@@ -2478,8 +2535,32 @@ section.column>div .item:hover p {
 
   /* DEALS OF THE WEEK STARTS */
 
-  section.column>div:nth-child(3) {
+  .container.deals {
+    padding-bottom: 200px;
+  }
+
+  .deals .items .head h4 {
+    font-weight: 500;
+  }
+
+  section.column>div {
+    width: 100%;
+  }
+
+  section.column>div .item {
+    padding: 20px 0;
+  }
+
+  section.column>div div:nth-child(2) {
     display: none;
+  }
+
+  section.column>div:nth-child(2) {
+    display: none;
+  }
+
+  section.column>div .item small {
+    font-weight: 500;
   }
 
   /* DEALS OF THE WEEK ENDS */
@@ -2503,30 +2584,33 @@ section.column>div .item:hover p {
 
   /* HOT BEST SELLERS ENDS */
 
-    /* TRENDS STARTS */
+  /* TRENDS STARTS */
+  .trends .container {
+    padding: 0 12px;
+  }
 
-    .trends .item:nth-child(2) {
-      display: none;
-    }
-  
-    .trends .item {
-      width: 100%;
-      align-items: center;
-    }
-  
-    .trends .img {
-      width: 100%;
-    }
-  
-    .trends .text p {
-      font-size: 13px;
-    }
-  
-    .trends .text h3 {
-      font-size: 24px;
-    }
-  
-    /* TRENDS ENDS */
+  .trends .item:nth-child(2) {
+    display: none;
+  }
+
+  .trends .item {
+    width: 100%;
+    align-items: center;
+  }
+
+  .trends .img {
+    width: 100%;
+  }
+
+  .trends .text p {
+    font-size: 13px;
+  }
+
+  .trends .text h3 {
+    font-size: 24px;
+  }
+
+  /* TRENDS ENDS */
 
   /* RECENTLY VIEWED STARTS */
 

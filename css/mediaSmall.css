@@ -13,7 +13,7 @@
     margin-left: 0;
   }
   .sec-1 {
-    padding: 10px 0;
+    padding: 10px 12px;
   }
   .sec-1 h1 a {
     font-size: 22px;
@@ -60,6 +60,7 @@
   }
   .categories h3 {
     margin-bottom: 0;
+    font-weight: 400;
   }
   .categories div:nth-child(2) {
     right: 10px;
