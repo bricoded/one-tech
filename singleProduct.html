@@ -23,6 +23,12 @@
 </head>
 
 <body>
+  <div class="newtons-cradle">
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+  </div>
   <!-- HEADER SECTION -->
   <header>
     <div class="container">
@@ -448,6 +454,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    var loader = document.querySelector('.newtons-cradle');
+
+    window.addEventListener('load', function(){
+      loader.style.display = 'none';
+    })
+  </script>
 </body>
 
 </html>
